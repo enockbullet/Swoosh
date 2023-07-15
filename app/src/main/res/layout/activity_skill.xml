@@ -59,34 +59,36 @@
         app:layout_constraintTop_toBottomOf="@+id/textView5">
 
         <ToggleButton
-            android:id="@+id/toggleButton"
+            android:id="@+id/beginerbtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="16dp"
             android:layout_weight="1"
             android:background="@drawable/swoosh_"
             android:fontFamily="@font/montserrat"
+            android:onClick="onbeginerclick"
             android:text="@string/beginer"
             android:textColor="@color/colorAccent"
             android:textOff="@string/beginer"
             android:textOn="@string/beginer" />
 
         <ToggleButton
-            android:id="@+id/toggleButton2"
+            android:id="@+id/ballerbtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
             android:layout_weight="1"
             android:background="@drawable/swoosh_"
             android:fontFamily="@font/montserrat"
+            android:onClick="onballerclick"
             android:text="@string/baller"
             android:textColor="@color/colorAccent"
             android:textOff="@string/baller"
-            android:textOn="@string/baller"/>
+            android:textOn="@string/baller" />
     </LinearLayout>
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/finishbtn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -94,6 +96,7 @@
         android:layout_marginBottom="16dp"
         android:background="@drawable/swoosh_btn"
         android:fontFamily="@font/montserrat"
+        android:onClick="onfinishclick"
         android:text="@string/finish"
         android:textColor="@color/colorAccent"
         app:backgroundTint="@color/black"

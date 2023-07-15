@@ -48,45 +48,48 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <ToggleButton
-        android:id="@+id/toggleButton11"
+        android:id="@+id/women"
         android:layout_width="320dp"
         android:layout_height="53dp"
         android:layout_marginTop="60dp"
         android:background="@drawable/swoosh_"
+        android:onClick="onwomenclicked"
         android:text="@string/Women"
         android:textColor="@color/colorAccent"
         android:textOff="@string/Women"
         android:textOn="@string/Women"
         android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="@+id/toggleButton12"
+        app:layout_constraintEnd_toEndOf="@+id/menbtn"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/toggleButton12"
+        app:layout_constraintStart_toStartOf="@+id/menbtn"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <ToggleButton
-        android:id="@+id/toggleButton12"
+        android:id="@+id/menbtn"
         android:layout_width="320dp"
         android:layout_height="56dp"
         android:layout_marginTop="24dp"
         android:background="@drawable/swoosh_"
+        android:onClick="onmenclicked"
         android:text="@string/men"
         android:textColor="@color/colorAccent"
         android:textOff="@string/men"
         android:textOn="@string/men"
         android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="@+id/toggleButton13"
+        app:layout_constraintEnd_toEndOf="@+id/coedbtn"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/toggleButton13"
-        app:layout_constraintTop_toBottomOf="@+id/toggleButton11" />
+        app:layout_constraintStart_toStartOf="@+id/coedbtn"
+        app:layout_constraintTop_toBottomOf="@+id/women" />
 
     <ToggleButton
-        android:id="@+id/toggleButton13"
+        android:id="@+id/coedbtn"
         android:layout_width="320dp"
         android:layout_height="53dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="16dp"
         android:background="@drawable/swoosh_"
+        android:onClick="oncoedclicked"
         android:text="@string/coed"
         android:textColor="@color/colorAccent"
         android:textOff="@string/coed"
@@ -94,7 +97,7 @@
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toggleButton12" />
+        app:layout_constraintTop_toBottomOf="@+id/menbtn" />
 
     <Button
         android:id="@+id/nextbtn"
